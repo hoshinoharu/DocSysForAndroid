@@ -1,0 +1,152 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:overScrollMode">never</item>
+    </style>
+
+    <style name="accentButton">
+        <item name="android:background">@drawable/accent_btn</item>
+        <item name="android:textColor">#fff</item>
+    </style>
+
+    <style name="singleLineText">
+        <item name="android:singleLine">true</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="fitSysWindowsToolbar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">80dp</item>
+        <item name="android:paddingTop">24dp</item>
+    </style>
+
+    <style name="importantText">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/colorImportantText</item>
+    </style>
+
+    <style name="normalText">
+
+    </style>
+
+    <style name="secondaryText">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#86707070</item>
+    </style>
+
+    <!--工具栏-->
+    <style name="toolbar">
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:layout_height">@dimen/fit_sys_windows_tool_bar_height</item>
+        <item name="android:paddingTop">@dimen/status_bar_height</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <!--工具栏标题-->
+    <style name="toolbarTitle">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <!--房屋文本属性输入框-->
+    <style name="houseSPEditText" parent="singleLineText">
+        <item name="android:background">@drawable/filter_item_input</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:inputType">text</item>
+    </style>
+
+    <!--电话输入框-->
+    <style name="housePhoneEditText" parent="singleLineText">
+        <item name="android:background">@drawable/filter_item_input</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:inputType">phone</item>
+    </style>
+
+
+    <!--房屋数字属性输入框-->
+    <style name="houseNPEditText">
+        <item name="android:background">@drawable/filter_item_input</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:inputType">numberDecimal</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+
+    <style name="formSubmitBtn" parent="accentButton">
+        <item name="android:layout_marginStart">32dp</item>
+        <item name="android:layout_marginEnd">32dp</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:layout_marginBottom">16dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="logoutBtn" parent="formSubmitBtn">
+        <item name="background">@drawable/logout_btn</item>
+    </style>
+
+    <style name="formEditText">
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:drawablePadding">8dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="userNameFormEditText" parent="formEditText">
+        <item name="android:drawableStart">@drawable/user</item>
+        <item name="android:inputType">textPersonName</item>
+        <item name="android:hint">@string/edTxt_userName</item>
+    </style>
+
+    <style name="phoneFormEditText" parent="formEditText">
+        <item name="android:drawableStart">@drawable/phone</item>
+        <item name="android:inputType">phone</item>
+        <item name="android:hint">@string/input_phone</item>
+    </style>
+
+    <style name="formSeparator">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:background">@color/colorSeparator</item>
+        <item name="android:layout_marginTop">8dp</item>
+    </style>
+
+    <style name="passwordFormEditText" parent="formEditText">
+        <item name="android:drawableStart">@drawable/lock</item>
+        <item name="android:inputType">textPassword</item>
+        <item name="android:hint">@string/edTxt_password</item>
+    </style>
+
+    <style name="formFrame">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/login_input_bg</item>
+        <item name="android:paddingStart">8dp</item>
+        <item name="android:paddingEnd">8dp</item>
+        <item name="android:paddingBottom">16dp</item>
+    </style>
+
+    <style name="removeButtonInList">
+        <item name="android:background">@drawable/btn_list_delete</item>
+        <item name="android:text">@string/delete</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+</resources>

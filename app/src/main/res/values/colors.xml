@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3295FA</color>
+    <color name="colorPrimaryDark">#3295FA</color>
+    <color name="colorAccent">#3295FA</color>
+    <color name="colorAccentLight">#563295FA</color>
+
+
+    <color name="colorImportantText">#2c2c2c</color>
+    <color name="colorNormalText">#515151</color>
+    <color name="colorSearchText">#A0A0A0</color>
+    <color name="colorSearchBg">#F3F3F3</color>
+    <color name="secondText">#707070</color>
+
+    <color name="housePrice">#F95849</color>
+    <color name="colorSeparator">#2000</color>
+    <color name="alert">#FF3030</color>
+    <color name="important">#AAFF3030</color>
+    <color name="ripple_color">#5000</color>
+    <color name="edit_text_hint">#B8B8B8</color>
+</resources>

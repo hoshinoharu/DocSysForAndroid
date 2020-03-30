@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_margin="16dp"
+        style="@style/formFrame"
+        >
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/edTxt_userName"
+            style="@style/userNameFormEditText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:met_clearButton="true"
+            app:met_hideUnderline="true"
+            android:hint="请输入用户账号"
+            />
+
+        <View
+            style="@style/formSeparator"
+            app:layout_constraintTop_toBottomOf="@id/edTxt_userName" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/edTxt_password"
+            style="@style/passwordFormEditText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edTxt_userName"
+            app:met_clearButton="true"
+            app:met_hideUnderline="true" />
+
+        <View
+            style="@style/formSeparator"
+            app:layout_constraintTop_toBottomOf="@id/edTxt_password" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/edTxt_confirmPassword"
+            style="@style/passwordFormEditText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edTxt_password"
+            app:met_clearButton="true"
+            app:met_hideUnderline="true"
+            android:hint="@string/edTxt_confirmPassword"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/btn_register"
+        style="@style/formSubmitBtn"
+        android:text="@string/register" />
+</LinearLayout>

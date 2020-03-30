@@ -1,0 +1,85 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.2"
+    defaultConfig {
+        applicationId "com.rehoshi.guidesys"
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility = 1.8
+        targetCompatibility = 1.8
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
+
+    implementation 'androidx.recyclerview:recyclerview:1.0.0'
+
+    //butterknife view 注入
+    api 'com.jakewharton:butterknife:10.0.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.0.0'
+
+    // 网络请求框架
+    api 'com.squareup.retrofit2:retrofit:2.5.0'
+
+    //json 转换工厂
+    api 'com.squareup.retrofit2:converter-gson:2.5.0'
+
+    //retrofit rxjava2 适配器
+    api 'com.squareup.retrofit2:adapter-rxjava2:2.5.0'
+
+    //RXJava2 响应式编程
+    api 'io.reactivex.rxjava2:rxjava:2.2.4'
+
+    api 'io.reactivex.rxjava2:rxandroid:2.1.0'
+
+    api 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-alpha-16'
+    //输入框控件
+    api 'com.rengwuxian.materialedittext:library:2.1.4'
+    //底部导航栏
+    api 'com.ashokvarma.android:bottom-navigation-bar:2.1.0'
+
+    api 'de.hdodenhof:circleimageview:2.2.0'
+
+    api group: 'com.squareup.okhttp3', name: 'logging-interceptor', version: '3.12.1'
+
+    //沉浸状态栏
+    api group: 'com.github.crossoverone', name: 'StatusBarUtil', version: '1.3.4'
+
+    //文件选择器
+    implementation 'com.droidninja:filepicker:2.2.1'
+
+    // https://mvnrepository.com/artifact/com.google.android.material/material
+    api group: 'com.google.android.material', name: 'material', version: '1.2.0-alpha05'
+
+    //广告轮播
+    api 'com.youth.banner:banner:1.4.10'
+    implementation 'com.github.mcxtzhang:SwipeDelMenuLayout:V1.3.0'
+    //图片加载
+    implementation 'com.github.bumptech.glide:glide:4.7.1'
+    //对话框组件
+    implementation 'com.github.Othershe:NiceDialog:1.1.9'
+    api 'com.mapzen:on-the-road:0.8.1'
+    //权限申请
+    implementation 'com.github.dfqin:grantor:2.5'
+
+    api 'com.leon:lfilepickerlibrary:1.8.0'
+}
